@@ -5,10 +5,10 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy the Python dependencies file to the container
-COPY requirements.txt .
+
 
 # Install the Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install Flask
 
 # Copy the Flask application code to the container
 COPY app.py .
